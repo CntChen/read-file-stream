@@ -5,6 +5,7 @@
  */
 
 const fs = require('fs');
+const path = require('path');
 const { dealOneLine, logResult } = require('./analyze');
 
 console.log('开始文件处理.\n');
