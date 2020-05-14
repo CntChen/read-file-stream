@@ -26,7 +26,7 @@ readStream.on('data', (data) => {
     const dataStr = data.toString();
     const lines = dataStr.split('\n');
 
-    // 有上一次流外部数据, 则累计
+    // 有上一次流尾部数据, 则累计
     if (lastLine.length) {
         lines[0] = `${lastLine}${lines[0]}`;
     }
