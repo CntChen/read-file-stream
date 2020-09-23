@@ -21,7 +21,7 @@ let lastLine = '';
 
 readStream.on('data', (data) => {
     streamDataCount++;
-    console.log('当前处理的 block:', streamDataCount);
+    // console.log('当前处理的 block:', streamDataCount);
 
     const dataStr = data.toString();
     const lines = dataStr.split('\n');
